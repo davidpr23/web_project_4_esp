@@ -9,6 +9,11 @@
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     margin: auto;
-
+    
     position: relative;
+}
+@media screen and (max-width: 490px) {
+    .popup{
+        max-width: 90vw;
+    }
 }
