@@ -1,0 +1,4 @@
+.container-popup__active{
+    opacity: 1;
+    visibility: visible;
+}
