@@ -1,5 +1,5 @@
 
-let like = document.querySelectorAll(".card__like");
+const like = document.querySelectorAll(".card__like");
 
 for(let i = 0; i < like.length; i++){
     like[i].addEventListener('click', function(){
@@ -13,16 +13,17 @@ for(let i = 0; i < like.length; i++){
     });
 }
 
+const profileEdit = document.querySelector('.profile__edit');
+const closeButtonPopup = document.querySelector('.popup__close');
+const popup = document.querySelector('.container-popup');
 
-let profileEdit = document.querySelector('.profile__edit');
-let closebuttonPopup = document.querySelector('.popup__close');
-let popup = document.querySelector('.container-popup');
+const profileName = document.querySelector('.profile__name');
+const profileExplorador = document.querySelector('.profile__explorador');
 
-let profileName = document.querySelector('.profile__name');
-let profileExplorador = document.querySelector('.profile__explorador');
+const inputName = document.querySelector('#popup__input-name');
+const inputAbout = document.querySelector('#popup__input-about');
 
-let inputName = document.querySelector('#popup__input-name');
-let inputAbout = document.querySelector('#popup__input-about');
+const formElement = document.querySelector('.popup__form');
 
 function showPopup(){
     popup.classList.add('container-popup__active')
@@ -34,10 +35,7 @@ function closePopup(){
     popup.classList.remove('container-popup__active')
 }
 profileEdit.addEventListener('click', showPopup);
-closebuttonPopup.addEventListener('click', closePopup);
-
-
-let formElement = document.querySelector('.popup__form');
+closeButtonPopup.addEventListener('click', closePopup);
 
 function handleProfileFormSubmit(evt) {
     evt.preventDefault();

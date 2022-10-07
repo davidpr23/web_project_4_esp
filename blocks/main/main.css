@@ -1,12 +1,10 @@
-.header{
-    height: 74px;
-    border-bottom: solid 1px #545454;
-    
+.main{
     margin: auto;
     max-width: 880px;
 }
+
 @media screen and (max-width: 940px) {
-    .header{
+    .main{
         max-width: 90vw;
     }
 }

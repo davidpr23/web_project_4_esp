@@ -9,7 +9,7 @@
     
     <title>Alrededor de los Estados Unidos</title>
 </head>
-<body class="root">
+<body>
     <div class="page">
         <header class="header">
             <img class="header__logo" src="./images/logo.svg" alt="logo">
@@ -17,78 +17,62 @@
 
         <main class="main">
             <section class="profile">
-                <div class="profile__avatar">
-                    <img class="profile__image" src="./images/profile.jpg" alt="Imagen con avatar">
-                </div>
+                <img class="profile__avatar" src="./images/profile.jpg" alt="Imagen con avatar">
                 <div class="profile__info">
                     <div class="profile__container-update">
                         <h1 class="profile__name">David Quinchimbla</h1>
-                        <button class="profile__edit"><img  src="./images/edit.svg" alt="Icono editar"></button>
+                        <button class="profile__edit" type="button"><img  src="./images/edit.svg" alt="Icono editar"></button>
                     </div>
-                    <div class="profile__container-hobby">
-                        <h2 class="profile__explorador">Frontend Developer</h2>
-                    </div>
+                    <h2 class="profile__explorador">Frontend Developer</h2>
                 </div>
-                <button class="profile__button"><img  src="./images/Add Button.svg" alt="Icono de agregar"></button>
+                <button class="profile__button" type="button"><img  src="./images/Add Button.svg" alt="Icono de agregar"></button>
             </section>
 
             <section class="elements">
                 <div class="card">
-                    <div class="card__main">
-                        <img class="card__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Valle de Yosemite">
-                    </div>
+                    <img class="card__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Valle de Yosemite">
                     <div class="card__footer">
                         <h1 class="card__name">Valle de Yosemite</h1>
-                        <button class="card__like"></button>
+                        <button class="card__like" type="button"></button>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card__main">
-                        <img class="card__image" src="./images/lago_louise.png" alt="Lago Louise">
-                    </div>
+                    <img class="card__image" src="./images/lago_louise.png" alt="Lago Louise">
                     <div class="card__footer">
                         <h1 class="card__name">Lago Louise</h1>
-                        <button class="card__like"></button>
+                        <button class="card__like" type="button"></button>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card__main">
-                        <img class="card__image" src="./images/calvas.png" alt="Montañas Calvas">
-                    </div>
+                    <img class="card__image" src="./images/calvas.png" alt="Montañas Calvas">
                     <div class="card__footer">
                         <h1 class="card__name">Montañas Calvas</h1>
-                        <button class="card__like"></button>
+                        <button class="card__like" type="button"></button>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card__main">
-                        <img class="card__image" src="./images/lateman.png" alt="Latemar">
-                    </div>
+                    <img class="card__image" src="./images/lateman.png" alt="Latemar">
                     <div class="card__footer">
                         <h1 class="card__name">Latemar</h1>
-                        <button class="card__like"></button>
+                        <button class="card__like" type="button"></button>
                     </div>
                 </div>
 
                 <div class="card">
-                    <div class="card__main">
-                        <img class="card__image" src="./images/vanoise.png" alt="Vanoise National">
-                    </div>
+                    <img class="card__image" src="./images/vanoise.png" alt="Vanoise National">
                     <div class="card__footer">
                         <h1 class="card__name">Vanoise National Park</h1>
-                        <button class="card__like"></button>
+                        <button class="card__like" type="button"></button>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="card__main">
-                        <img class="card__image" src="./images/braies.png" alt="Lago di Braies">
-                    </div>
+                    <img class="card__image" src="./images/braies.png" alt="Lago di Braies">
                     <div class="card__footer">
                         <h1 class="card__name">Lago di Braies</h1>
-                        <button class="card__like"></button>
+                        <button class="card__like" type="button"></button>
                     </div>
                 </div>
                 
@@ -105,8 +89,8 @@
             <h1 class="popup__title">Edit Profile</h1>
             
             <form action="" class="popup__form">
-                <input class="popup__form-input" type="text" id="popup__input-name" placeholder="Nombre" required>
-                <input class="popup__form-input" type="text" id="popup__input-about" placeholder="Acerca de mi" required>
+                <input class="popup__form-input" type="text" id="popup__input-name" placeholder="Nombre" minlength="2" maxlength="40" required>
+                <input class="popup__form-input" type="text" id="popup__input-about" placeholder="Acerca de mi" minlength="2" maxlength="40" required>
                 <button class="popup__button-save" type="submit">Guardar</button>
             </form>
             <button class="popup__close"></button>

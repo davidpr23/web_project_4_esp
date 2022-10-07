@@ -6,4 +6,13 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+
+    margin: auto;
+    max-width: 880px;
+}
+
+@media screen and (max-width: 940px) {
+    .footer{
+        max-width: 90vw;
+    }
 }
