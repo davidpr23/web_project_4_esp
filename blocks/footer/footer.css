@@ -9,10 +9,12 @@
 
     margin: auto;
     max-width: 880px;
+    min-width: 280px;
 }
 
 @media screen and (max-width: 940px) {
     .footer{
         max-width: 90vw;
+        text-align: center;
     }
 }
