@@ -29,53 +29,9 @@
             </section>
 
             <section class="elements">
-                <div class="card">
-                    <img class="card__image" src="./images/kirill-pershin-1088404-unsplash.jpg" alt="Valle de Yosemite">
-                    <div class="card__footer">
-                        <h1 class="card__name">Valle de Yosemite</h1>
-                        <button class="card__like" type="button"></button>
-                    </div>
+                <div class="empty-card">
+                    <p class="empty-card__text">No se han agregado lugares</p>
                 </div>
-
-                <div class="card">
-                    <img class="card__image" src="./images/lago_louise.png" alt="Lago Louise">
-                    <div class="card__footer">
-                        <h1 class="card__name">Lago Louise</h1>
-                        <button class="card__like" type="button"></button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image" src="./images/calvas.png" alt="Montañas Calvas">
-                    <div class="card__footer">
-                        <h1 class="card__name">Montañas Calvas</h1>
-                        <button class="card__like" type="button"></button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image" src="./images/lateman.png" alt="Latemar">
-                    <div class="card__footer">
-                        <h1 class="card__name">Latemar</h1>
-                        <button class="card__like" type="button"></button>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img class="card__image" src="./images/vanoise.png" alt="Vanoise National">
-                    <div class="card__footer">
-                        <h1 class="card__name">Vanoise National Park</h1>
-                        <button class="card__like" type="button"></button>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card__image" src="./images/braies.png" alt="Lago di Braies">
-                    <div class="card__footer">
-                        <h1 class="card__name">Lago di Braies</h1>
-                        <button class="card__like" type="button"></button>
-                    </div>
-                </div>
-                
             </section>
         </main>
 
@@ -84,19 +40,48 @@
         </footer>
     </div>
 
-    <div class="container-popup">
+    <div class="container-popup edit-popup">
         <div class="popup">
             <h1 class="popup__title">Edit Profile</h1>
-            
-            <form action="" class="popup__form">
+            <form action="" class="popup__form popup__form-edit">
                 <input class="popup__form-input" type="text" id="popup__input-name" placeholder="Nombre" minlength="2" maxlength="40" required>
                 <input class="popup__form-input" type="text" id="popup__input-about" placeholder="Acerca de mi" minlength="2" maxlength="40" required>
                 <button class="popup__button-save" type="submit">Guardar</button>
             </form>
-            <button class="popup__close"></button>
+            <button class="popup__close popup__close-edit"></button>
+        </div>
+    </div>
+    <div class="container-popup add-popup">
+        <div class="popup">
+            <h1 class="popup__title">Nuevo lugar</h1>
+            <form action="" class="popup__form popup__form-add">
+                <input class="popup__form-input" type="text" id="popup__input-title" placeholder="Título" minlength="2" maxlength="40" required>
+                <input class="popup__form-input" type="text" id="popup__input-link" placeholder="Enlace de la imagen" minlength="2" required>
+                <button class="popup__button-save" type="submit">Crear</button>
+            </form>
+            <button class="popup__close popup__close-add"></button>
+        </div>
+    </div>
+    <div class="container-popup images-popup">
+        <div class="img-popup">
+            <img class="img-popup__img">
+            <h1 class="img-popup__title">Hola</h1>
+            <button class="popup__close popup__close-img"></button>
         </div>
     </div>
 
+    <template id="card-template">
+        <div class="card">
+            <img class="card__trash" src="./images/Trash.svg" alt="Icono eliminar">
+            <img class="card__image">
+            <div class="card__footer">
+                <h1 class="card__name"></h1>
+                <button class="card__like" type="button"></button>
+            </div>
+        </div>
+    </template>
+
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/target.js"></script>
 </body>
 </html>

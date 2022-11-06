@@ -1,21 +1,11 @@
 
-const like = document.querySelectorAll(".card__like");
-
-for(let i = 0; i < like.length; i++){
-    like[i].addEventListener('click', function(){
-        if(like[i].classList.contains("card__like")){
-            like[i].classList.remove("card__like")
-            like[i].classList.add("card__like_button_active")
-        }else{
-            like[i].classList.remove("card__like_button_active")
-            like[i].classList.add("card__like")
-        }
-    });
-}
-
 const profileEdit = document.querySelector('.profile__edit');
-const closeButtonPopup = document.querySelector('.popup__close');
-const popup = document.querySelector('.container-popup');
+const closeButtonPopupEdit = document.querySelector('.popup__close-edit');
+const popupEdit = document.querySelector('.edit-popup');
+
+const profileAdd = document.querySelector('.profile__button');
+const closeButtonPopupAdd = document.querySelector('.popup__close-add');
+const popupAdd = document.querySelector('.add-popup');
 
 const profileName = document.querySelector('.profile__name');
 const profileExplorador = document.querySelector('.profile__explorador');
@@ -23,25 +13,40 @@ const profileExplorador = document.querySelector('.profile__explorador');
 const inputName = document.querySelector('#popup__input-name');
 const inputAbout = document.querySelector('#popup__input-about');
 
-const formElement = document.querySelector('.popup__form');
+const inputTitle = document.querySelector('#popup__input-title');
+const inputLink = document.querySelector('#popup__input-link');
 
-function showPopup(){
-    popup.classList.add('container-popup__active')
+const formElementEdit = document.querySelector('.popup__form-edit');
+const formElementAdd = document.querySelector('.popup__form-add');
+
+function showPopupEdit(){
+    popupEdit.classList.add('container-popup__active')
     inputName.placeholder = profileName.textContent;
     inputAbout.placeholder = profileExplorador.textContent;
 }
 
-function closePopup(){
-    popup.classList.remove('container-popup__active')
+function showPopupAdd(){
+    popupAdd.classList.add('container-popup__active')
 }
-profileEdit.addEventListener('click', showPopup);
-closeButtonPopup.addEventListener('click', closePopup);
+
+function closePopupEdit(){
+    popupEdit.classList.remove('container-popup__active')
+}
+
+function closePopupAdd(){
+    popupAdd.classList.remove('container-popup__active')
+}
+profileEdit.addEventListener('click', showPopupEdit);
+closeButtonPopupEdit.addEventListener('click', closePopupEdit);
+
+profileAdd.addEventListener('click', showPopupAdd);
+closeButtonPopupAdd.addEventListener('click', closePopupAdd);
 
 function handleProfileFormSubmit(evt) {
     evt.preventDefault();
     profileName.textContent = inputName.value;
     profileExplorador.textContent = inputAbout.value;
-    closePopup();
+    closePopupEdit();
 }
 
-formElement.addEventListener('submit', handleProfileFormSubmit); 
+formElementEdit.addEventListener('submit', handleProfileFormSubmit); 
