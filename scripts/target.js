@@ -24,7 +24,7 @@ function openImgPopup(cardImage){
             addImgPopup.alt = evt.target.alt
             addImgTitlePopup.textContent = evt.target.alt
 
-            const closeButtonPopupImg = document.querySelector('.popup__close-img');
+            const closeButtonPopupImg = document.querySelector('.img-popup__close');
             closeButtonPopupImg.addEventListener('click', function(){
                 popupImg.classList.remove('container-popup__active')
             });
