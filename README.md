@@ -1,8 +1,12 @@
 # Proyecto 4: Alrededor de los Estados Unidos
 
+### Introducción
+
+Es es un sitio web totalmente responsivo que permite mostrar diferentes lugares de Estados Unidos.
+
 ### Descripción general
 
-Se ha permitido agregar la tecnología de javascript con el objetivo de hacer la página web mas dinámica. Ahora, la web permite cambiar información tales como el nombre y sobre su trabajo.
+Este sitio web permite a los usuarios editar el perfil, asi como también se puede añadir o eliminar distintos lugares, a la vez, se puede dejar una reacción de "me gusta" a cada uno de ellos. El sitio web permite expandir las imágenes para una mejor visualización de ellas.
 
 ### Tecnologías utilizados en el proyecto
 

@@ -4,11 +4,17 @@
     padding-right: 25px;
     font-weight: 500;
     line-height: 48px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 373px;
+    
 }
 
 @media screen and ( max-width: 475px ) {
     .profile__name{
         font-size: 22px;
         line-height: 27px;
+        width: 200px;
     }
 }

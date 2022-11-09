@@ -5,7 +5,8 @@ const cardTemplate = document.querySelector('#card-template').content;
 
 function emptyCard(empty){
     const alertCard = cardContainer.querySelector('.empty-card');
-    if(empty.length != 0){
+    let allCard = 0;
+    if(empty.length != allCard){
         alertCard.classList.add('display-none')
     }else{
         alertCard.classList.remove('display-none')
@@ -31,7 +32,7 @@ function openImgPopup(cardImage){
         })
     })
 }
-function listTarget(){
+function listCard(){
     const initialCards = [
         {
             name: "Valle de Yosemite",
@@ -83,7 +84,7 @@ function listTarget(){
     openImgPopup(document.querySelectorAll('.card__image'))
 }
 
-function addTarget(title, link){
+function addCard(title, link){
     const cardElement = cardTemplate.querySelector('.card').cloneNode(true)
     cardElement.querySelector('.card__image').src = link;
     cardElement.querySelector('.card__image').alt = title;
@@ -105,14 +106,14 @@ function addTarget(title, link){
     openImgPopup(document.querySelectorAll('.card__image'))
 }
 
-listTarget();
+listCard();
 
-function AddSubmit(evt) {
+function addSubmit(evt) {
     evt.preventDefault();
-    let title = inputTitle.value;
-    let link = inputLink.value;
-    addTarget(title, link);
-    closePopupAdd();
+    const title = inputTitle.value;
+    const link = inputLink.value;
+    addCard(title, link);
+    showPopupAdd();
 }
 
-formElementAdd.addEventListener('submit', AddSubmit); 
+formElementAdd.addEventListener('submit', addSubmit); 

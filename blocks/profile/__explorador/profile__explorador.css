@@ -3,11 +3,18 @@
     margin: 0;
     font-weight: 400;
     line-height: 22px;
-    padding-top: 13px;
+    padding-top: 5px;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    
+    width: 372px;
+    
 }
 
 @media screen and ( max-width: 860px ) {
     .profile__explorador{
-        padding-top: 14px;
+        width: 200px;
     }
 }
