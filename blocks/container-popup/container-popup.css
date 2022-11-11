@@ -1,17 +1,17 @@
-.container-popup{
-    font-family: Inter;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0.6s, opacity 0.5s ease-in-out;
-    -webkit-transition: visibility 0.6s, opacity 0.5s ease-in-out;
-    -moz-transition: visibility 0.6s, opacity 0.5s ease-in-out;
-    -ms-transition: visibility 0.6s, opacity 0.5s ease-in-out;
-    -o-transition: visibility 0.6s, opacity 0.5s ease-in-out;
+.container-popup {
+  font-family: "Inter", Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.6s, opacity 0.5s ease-in-out;
+  -webkit-transition: visibility 0.6s, opacity 0.5s ease-in-out;
+  -moz-transition: visibility 0.6s, opacity 0.5s ease-in-out;
+  -ms-transition: visibility 0.6s, opacity 0.5s ease-in-out;
+  -o-transition: visibility 0.6s, opacity 0.5s ease-in-out;
 }

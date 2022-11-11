@@ -1,20 +1,21 @@
-.popup{
-    width: 430px;
-    height: 330px;
-    background-color: #fff;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    margin: auto;
-    
-    position: relative;
+.popup {
+  width: 430px;
+  height: 330px;
+  background-color: #fff;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: auto;
+
+  position: relative;
 }
+
 @media screen and (max-width: 490px) {
-    .popup{
-        max-width: 90vw;
-        min-width: 280px;
-    }
+  .popup {
+    max-width: 90vw;
+    min-width: 280px;
+  }
 }

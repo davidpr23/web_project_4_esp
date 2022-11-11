@@ -1,13 +1,13 @@
-.profile__info{
-    height: 74px;
-    display: flex;
-    flex-direction: column;
+.profile__info {
+  height: 74px;
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and ( max-width: 860px ) {
-    .profile__info{
-        padding-top: 26.25px;
-        min-width: 280px;
-        align-items: center;
-    }
+@media screen and (max-width: 860px) {
+  .profile__info {
+    padding-top: 26.25px;
+    min-width: 280px;
+    align-items: center;
+  }
 }

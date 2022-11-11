@@ -1,9 +1,9 @@
-.card{
-    width: 282px;
-    height: 361px;
-    border-radius: 10px;
-    background-color: #fff;
-    min-width: 280px;
+.card {
+  width: 282px;
+  height: 361px;
+  border-radius: 10px;
+  background-color: #fff;
+  min-width: 280px;
 
-    position: relative;
+  position: relative;
 }

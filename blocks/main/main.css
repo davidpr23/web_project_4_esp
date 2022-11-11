@@ -1,10 +1,10 @@
-.main{
-    margin: auto;
-    max-width: 880px;
+.main {
+  margin: auto;
+  max-width: 880px;
 }
 
 @media screen and (max-width: 940px) {
-    .main{
-        max-width: 90vw;
-    }
+  .main {
+    max-width: 90vw;
+  }
 }

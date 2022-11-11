@@ -19,27 +19,27 @@ const inputLink = document.querySelector("#popup__input-link");
 const formElementEdit = document.querySelector(".popup__form-edit");
 const formElementAdd = document.querySelector(".popup__form-add");
 
-function showPopupEdit() {
+function togglePopupEdit() {
   popupEdit.classList.toggle("container-popup__active");
   inputName.placeholder = profileName.textContent;
   inputAbout.placeholder = profileExplorador.textContent;
 }
 
-function showPopupAdd() {
+function togglePopupAdd() {
   popupAdd.classList.toggle("container-popup__active");
 }
 
-profileEdit.addEventListener("click", showPopupEdit);
-closeButtonPopupEdit.addEventListener("click", showPopupEdit);
+profileEdit.addEventListener("click", togglePopupEdit);
+closeButtonPopupEdit.addEventListener("click", togglePopupEdit);
 
-profileAdd.addEventListener("click", showPopupAdd);
-closeButtonPopupAdd.addEventListener("click", showPopupAdd);
+profileAdd.addEventListener("click", togglePopupAdd);
+closeButtonPopupAdd.addEventListener("click", togglePopupAdd);
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();
   profileName.textContent = inputName.value;
   profileExplorador.textContent = inputAbout.value;
-  showPopupEdit();
+  togglePopupEdit();
 }
 
 formElementEdit.addEventListener("submit", handleProfileFormSubmit); 
