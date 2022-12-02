@@ -52,4 +52,8 @@ const buttonInvalidInput = (inputList) => {
   })
 }
 
+const toggleButtonState = () => {
+  
+}
+
 validityForm()
