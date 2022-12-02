@@ -45,11 +45,13 @@
   <div class="container-popup edit-popup">
     <div class="popup">
       <h1 class="popup__title">Edit Profile</h1>
-      <form class="popup__form popup__form-edit">
+      <form class="popup__form popup__form-edit" novalidate>
         <input class="popup__form-input" type="text" id="popup__input-name" placeholder="Nombre" minlength="2"
           maxlength="40" required>
+        <span class="popup__input-name_error popup__form-input-error"></span>
         <input class="popup__form-input" type="text" id="popup__input-about" placeholder="Acerca de mi" minlength="2"
           maxlength="40" required>
+        <span class="popup__input-about_error popup__form-input-error"></span>
         <button class="popup__button-save" type="submit">Guardar</button>
       </form>
       <button class="popup__close popup__close-edit"></button>
@@ -58,11 +60,13 @@
   <div class="container-popup add-popup">
     <div class="popup">
       <h1 class="popup__title">Nuevo lugar</h1>
-      <form class="popup__form popup__form-add">
+      <form class="popup__form popup__form-add" novalidate>
         <input class="popup__form-input" type="text" id="popup__input-title" placeholder="Titulo" minlength="2"
           maxlength="40" required>
+        <span class="popup__input-title_error popup__form-input-error"></span>
         <input class="popup__form-input" type="text" id="popup__input-link" placeholder="Enlace de la imagen"
           minlength="2" required>
+        <span class="popup__input-link_error popup__form-input-error"></span>
         <button class="popup__button-save" type="submit">Crear</button>
       </form>
       <button class="popup__close popup__close-add"></button>
@@ -88,6 +92,7 @@
   </template>
 
   <script src="./scripts/index.js"></script>
+  <script src="./scripts/popupedit.js"></script>
   <script src="./scripts/target.js"></script>
 </body>
 

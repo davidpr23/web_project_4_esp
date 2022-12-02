@@ -35,11 +35,4 @@ closeButtonPopupEdit.addEventListener("click", togglePopupEdit);
 profileAdd.addEventListener("click", togglePopupAdd);
 closeButtonPopupAdd.addEventListener("click", togglePopupAdd);
 
-function handleProfileFormSubmit(evt) {
-  evt.preventDefault();
-  profileName.textContent = inputName.value;
-  profileExplorador.textContent = inputAbout.value;
-  togglePopupEdit();
-}
 
-formElementEdit.addEventListener("submit", handleProfileFormSubmit); 
