@@ -107,12 +107,11 @@ function addCard(title, link) {
 
 listCard();
 
-function addSubmit(evt) {
-  evt.preventDefault();
-  const title = inputTitle.value;
-  const link = inputLink.value;
+function addSubmit(inputTitle, inputLink) {
+  const title = inputTitle;
+  const link = inputLink;
   addCard(title, link);
   togglePopupAdd();
 }
 
-formElementAdd.addEventListener("submit", addSubmit);
+
