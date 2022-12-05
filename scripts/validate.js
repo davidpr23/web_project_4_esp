@@ -9,21 +9,21 @@ const enableValidation = ({
   popupFormEdit: "popup__form-edit",
   popupFormAdd: "popup__form-add",
 
-  inputName: "#popup__input-name",
-  inputAbout: "#popup__input-about",
-  inputTitle: "#popup__input-title",
-  inputLink: "#popup__input-link"
+  inputName: "#name-input",
+  inputAbout: "#about-input",
+  inputTitle: "#title-input",
+  inputLink: "#link-input"
 }); 
 
 const showInputError = (formElement, inputElement, errorMessage, enableValidation) => {
-  const errorElement = formElement.querySelector(`.${inputElement.id}_error`)
+  const errorElement = formElement.querySelector(`.${inputElement.id}-error`)
   errorElement.textContent = errorMessage;
   errorElement.classList.add(enableValidation.errorClass)
   inputElement.classList.add(enableValidation.inputErrorClass)
 }
 
 const hideInputError = (formElement, inputElement) => {
-  const errorElement = formElement.querySelector(`.${inputElement.id}_error`)
+  const errorElement = formElement.querySelector(`.${inputElement.id}-error`)
   errorElement.textContent = "";
   errorElement.classList.remove(enableValidation.errorClass)
   inputElement.classList.remove(enableValidation.inputErrorClass)

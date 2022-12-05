@@ -12,14 +12,14 @@ const profileExplorador = document.querySelector(".profile__explorador");
 
 const enablePopup = ({
   popupContainerSelector: ".container-popup",
-  popupSelector: ".popup__item",
+  popupSelector: ".popup-item",
 
   togglePopup: "container-popup__active",
 })
 
 function togglePopupEdit() {
-  const inputName = document.querySelector("#popup__input-name");
-  const inputAbout = document.querySelector("#popup__input-about");
+  const inputName = document.querySelector("#name-input");
+  const inputAbout = document.querySelector("#about-input");
   
   popupEdit.classList.toggle("container-popup__active");
   inputName.placeholder = profileName.textContent;
